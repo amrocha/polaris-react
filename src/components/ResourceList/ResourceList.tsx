@@ -127,7 +127,7 @@ export const ResourceList: ResourceListType = function ResourceList<ItemType>({
   onSortChange,
   onSelectionChange,
   renderItem,
-  idForItem = (item: any, index: number) =>
+  idForItem = (item: ItemType, index: number) =>
     Object.prototype.hasOwnProperty.call(item, 'id')
       ? item.id
       : index.toString(),
